@@ -16,22 +16,13 @@
     font-style: normal;
 }
 
-{
-    font-family: Arial, sans-serif;
-}
-
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --primary-color: #F2CEDF;
     --secondary-color: #8DE0F2;
-    --accent-color: #ecb2a5;
+    --accent-color: #e99582;
     --text-color: #220336;
     --header-color: #593d36;
-    --subheader-color: #220336;
+    --subheader-color: #361703;
 }
 
 body {
@@ -47,26 +38,41 @@ body {
 
 main {
     background-color: #fafbfc;
-    padding: 30px;
-    border-radius: 0px 15px 15px 15px;
-    max-width: 1000px;
+    padding: 20px;
+    border-radius: 0px 10px 10px 10px;
+    max-width: 78%;
     margin: 10px auto; /* Centraliza o conteúdo principal horizontalmente */
     min-width: 320px; /* Garante que o conteúdo seja legível em telas menores */
     height: auto;
 }
 
-image {
-    max-width: 100%;
-    height: auto;
+footer {
+    min-width: 320px; /* Garante que o rodapé seja legível em telas menores */
+    background-color: #fafbfc;
+    width: 79%;
+    margin: auto;
+    text-align: justify;
+    padding: 10px;
+    color: #220336;
+    font-family: 'Indie Flower', cursive;
+    font-size: 0.8em;
+    margin-top: 20px;
+    border-radius: 0px 10px 10px 10px;
 }
+
+    footer> p {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-shadow: #c5a7a1 2px 2px 4px;
+    }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background: linear-gradient(to left, #F2CEDF, #c2e7f0, #F2CEDF);*/
-    padding: 0px;
-    border-radius: 50px;
+    padding: 20px;
+    border-radius: 0px 20px 20px 20px;
     margin: 15px;
 }
 
@@ -80,14 +86,6 @@ header {
     justify-content: center; /* Centraliza o menu (pode usar flex-start ou space-between) */
 }
 
-/*strong {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, cursive;
-    font-size: 1.2em;
-    font-weight: normal;
-    color: rgb(255, 10, 2);
-    text-shadow: #25202091 1px 1px 2px;
-}*/
-
 .navbar a {
     max-width: 100%;
     font-family: Arial, sans-serif;
@@ -98,7 +96,7 @@ header {
     text-shadow: #593d36 2px 2px 4px;
     background-color: rgba(253, 153, 95, 0.363);
     border-radius: 15px;
-    }
+}
 
 .navbar a:hover {
     color: rgb(255, 255, 255);
@@ -108,54 +106,17 @@ header {
     padding: 5px;
 }
 
-a {
-    font-family: Arial, sans-serif;
-    font-size: large;
-    font-weight: bold;
-    text-decoration: none;
-    color: rgb(102, 24, 24);
-}
-
-a:hover {
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background-color: rgb(102, 24, 24);
-    border-radius: 3px;
-    padding: 5px;
-}
-
-.lista-horizontal a:hover {
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background-color: rgb(102, 24, 24);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 3px;
-    padding: 5px;
-}
-
-strong:hover {
-    color: rgb(247, 244, 244);
-    text-shadow: 4px 4px 8px rgba(143, 138, 138, 0.185);
-    background-color: rgb(206, 23, 23);
-    box-shadow: #e7f84f 0px 0px 10px, #e4f317 0px 0px 20px, #FF9800 0px 0px 30px;
-    border-radius: 20px;
-    padding: 30px;
-}
-
-menu {
-    display: flex;
-    justify-content: center;
-    background-color:#887BB06d;
-    padding: 20px 0;
-    margin-top: 10;
-    margin: -20px;
-}
-
 h1 {
     font-family: 'indie flower', cursive;
     text-align: center;
     color: #593d36;
     font-size: 4em;
+        @media (max-width:768px) {
+        font-size: 3.2em;
+        }
+        @media (max-width:375px) {
+        font-size: 2.5em;
+        }
     font-weight: bolder;
     font-style: italic;
     text-decoration: none;
@@ -169,6 +130,12 @@ h2 {
     padding: 20px;
     color: #220336;
     font-size: 2.8em;
+        @media (max-width:768px) {
+        font-size: 2.2em;
+        }
+        @media (max-width:375px) {
+        font-size: 1.8em;
+        }
     font-weight: bold;
     font-style: italic;
     text-decoration: none;
@@ -182,6 +149,12 @@ p {
   text-align: justify;
   color: #220336;
   font-size: 1.8em;
+    @media (max-width:768px) {
+        font-size: 1.4em;
+        }
+    @media (max-width:375px) {
+        font-size: 1em;
+        }
   margin: 0px 0;
   text-indent: 30px;
   padding: 15px;
@@ -193,10 +166,11 @@ p {
     font-style: normal;
     text-align: left;
     color: #220336;
-    font-size: 1.3em;
+    font-size: 2em;
     margin: 0px 0;
     padding: 0px;
 }
+
  .container {
     display: flex; /* Cria o layout de caixa flexível [4] */
     justify-content: space-between; /* Distribui as imagens lateralmente [4] */
@@ -205,31 +179,42 @@ p {
     height: auto;
     flex: 1;
     text-align: center;
-  }
+}
 
-  .item {
-    flex: 1; /* Faz com que cada div ocupe espaço igual */
-    text-align: center; /* Centraliza a imagem dentro de sua área */
-  }
+div.video {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os vídeos */
+    flex-wrap: wrap; /* Permite que os vídeos se ajustem em telas menores */
+    margin: 20px;
+}
 
-
-  .lista-horizontal {
+.lista-horizontal {
     display: flex;
     list-style: none; /* Remove as bolinhas */
     padding:>0;
     margin: 0;
     gap: 20px; /* Cria um espaço entre os itens */
     justify-content: center; /* Centraliza a lista horizontalmente */
-  }
-  
-  div.voltar {
-    font-family: 'Indie Flower', cursive;
+}
+
+.lista-horizontal a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgb(102, 24, 24);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+div.voltar {
+    /*font-family: 'Indie Flower', cursive;
     font-size: 1.2em;
-    text-shadow: #593d36 2px 2px 4px;
+    text-shadow: #593d36 2px 2px 4px;*/
     display: flex;
     justify-content: center;
     margin-top: 20px;
-  }
+}
 
   div.voltar a {
     text-decoration:underline;
@@ -240,181 +225,73 @@ p {
     text-shadow: #593d36 2px 2px 4px;
     padding: 10px 20px;
     border-radius: 0px 20px 20px 20px;
-    background-color: #F2CEDF;
-    box-shadow: #4facf84d 0px 0px 10px, #1776f34b 0px 0px 20px, #0400ff46 0px 0px 30px;
+    background-color: #f2cedfc9;
+    box-shadow: #88c7fa54 0px 0px 50px, #1776f349 0px 0px 30px, #0400ff50 0px 0px 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
-  }
+}
 
-  div.video {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Espaço entre os vídeos */
-    flex-wrap: wrap; /* Permite que os vídeos se ajustem em telas menores */
-    margin-top: 20px;
-  }
-
-  div.produtosfemininos {
-    max-width: 100%;
-    display: inline-block;
-    justify-content: center;
-    height: auto;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 70px;
-    margin-bottom: 50px;
-  }
-
-  div.produtosinfantis {
-    display: inline-block;
-    /*justify-content: center;*/
-    width: auto;
-    height: auto;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 70px;
-    margin-bottom: 50px;
-  }
-
-    div#pi1 img {
-        max-width: 100%;
-        height: auto; /* Mantém a proporção das imagens */
-        border-radius: 15px;
-        margin-bottom: 10px;
-    
-        }
-
-    div#pi2 img {
-         max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
-         height: auto; /* Mantém a proporção das imagens */
-         margin-bottom: 20px;
-         border-radius: 10px;
-         
-        }
-    
-    div#pi3 img {
-         max-width: 100%;
-         height: auto; /* Mantém a proporção das imagens */
-         border-radius: 15px;
-         margin-bottom: 10px;
-         
-        }
-
-    div#pi1 img:hover {
-    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
-    }
-    
-    .imagedefault, .imagehover {
-    transition: opacity 0.5s ease-in-out;
-    }
-
-    div#pi2 img.imagehover {
-        display: none; /* Esconde a imagem alternativa por padrão */
-        opacity: 0;
-    }
-
-    div#pi2:hover img.imagedefault {
-        display: none; /* Esconde a imagem padrão ao passar o mouse */
-        opacity: 0;
-    }
-    div#pi2:hover img.imagehover {
-        display: inherit; /* Mostra a imagem alternativa ao passar o mouse */
-        opacity: 1;
-    }
-    
-    div#pi3 img.imagehover {
-        display: none; /* Esconde a imagem alternativa por padrão */
-        opacity: 0;
-    }
-
-    div#pi3:hover img.imagedefault {
-        display: none; /* Esconde a imagem padrão ao passar o mouse */
-        opacity: 0;
-    }
-    
-    div#pi3:hover img.imagehover {
-        display: inherit; /* Mostra a imagem alternativa ao passar o mouse */
-        opacity: 1;
-    }
-
-  
-    /*div.produtosfemininos img {
-    width: 200px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: #4facf84d 0px 0px 10px, #1776f34b 0px 0px 20px, #0400ff46 0px 0px 30px;
-    transition: transform 0.3s ease;
-  }*/
-
-    div#pf1 img {
-        /*width: 400px; /* Largura fixa para as imagens dos produtos */
-        height: auto; /* Mantém a proporção das imagens */
-        border-radius: 15px;
-        margin-bottom: 10px;
-        transition: transform 0.3s ease;
-    }
-
-    div#pf2 img {
-     /*width: 200px; /* Largura fixa para as imagens dos produtos */
-     height: auto; /* Mantém a proporção das imagens */
-     margin-bottom: 20px;
-     border-radius: 10px;
-     transition: transform 0.3s ease;
-    }
-
-    div#pf3 img {
-    /* width: 200px; /* Largura fixa para as imagens dos produtos */
-     height: auto; /* Mantém a proporção das imagens */
-     border-radius: 15px;
-     margin-bottom: 10px;
-     transition: transform 0.3s ease;
-    }
-
-
-    div#pf1 img:hover {
-    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
-    
-    }
-
-    div#pf2 img:hover {
-    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
-    
-    } 
-
-    div#pf3 img:hover {
-    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
-    
-    }
-
-    div.feminina {
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 10px;
-    border-radius: 20px;
+.fiximagecontainer {
+    display: flex; /* Cria o layout de caixa flexível [4] */
+    justify-content: space-between; /* Distribui as imagens lateralmente [4] */
+    align-items: center; /* Centraliza verticalmente [4] */
     max-width: 100%;
     height: auto;
-    margin: 0 auto; /* Centraliza a página horizontalmente */
-    margin-top: 10px;
-    min-width: 320px; /* Garante que a página seja legível em telas menores */  
-    }
- 
-  footer {
-    min-width: 320px; /* Garante que o rodapé seja legível em telas menores */
-    background-color: #fafbfc;
-    width: 75%;
-    margin: auto;
-    text-align: justify;
-    padding: 10px;
-    color: #220336;
-    font-family: 'Indie Flower', cursive;
-    font-size: 1.2em;
-    margin-top: 20px;
-    border-radius: 0px 20px 20px 20px;
-  } 
-
-  footer> p {
+    flex: 1;
     text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-shadow: #c5a7a1 2px 2px 4px;
-  }
+}
+
+.fiximagecontainer:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+}
+
+.hoverimagecontainer {
+    max-width: 30%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img-wrapper {
+    position: relative; /* Agora as fotos se alinham aqui */
+    width: 100%;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove espaços vazios abaixo da imagem */
+    transition: opacity 0.4s ease;
+}
+
+/* A imagem de hover agora fica exatamente em cima da default, abaixo do texto */
+.imagehover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+/* Efeito de hover */
+.hoverimagecontainer:hover .imagehover {
+    opacity: 1;
+}
+
+.hoverimagecontainer:hover .imagedefault {
+    opacity: 0;
+}
+
+.hoverimagecontainer:hover .imagehover {
+    opacity: 1;
+}
+
+.roupasmeninos {
+    display: flex;          /* Ativa o modo lado a lado */
+    justify-content: center; /* Centraliza os itens na tela */
+    gap: 60px;              /* Cria um espaço entre as fotos */
+    flex-wrap: wrap;        /* Se a tela for pequena (celular), elas quebram a linha */
+}
+
+
 
