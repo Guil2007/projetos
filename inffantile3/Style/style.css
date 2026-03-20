@@ -1,0 +1,420 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Indie+Flower&display=swap');
+
+@font-face {
+    font-family: 'flanker'; /* Nome que você vai usar */
+    src: url('C:\Users\User\Documents\Estudos\html-css\Projetos\Inffantile\Fonts\FlankerGriffo-BoldItalic\Griffo\Flanker Griffo Italic Bold.otf') format('opentype'); /* Caminho da fonte */
+    font-weight: bolder;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'gluten'; /* Nome que você vai usar */
+    src: url("C:\Users\User\Documents\Estudos\html-css\Projetos\Inffantile\Fonts\Gluten\static\Gluten-Bold.ttf") format('opentype'); /* Caminho da fonte */
+    font-weight: bold;
+    font-style: normal;
+}
+
+{
+    font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #F2CEDF;
+    --secondary-color: #8DE0F2;
+    --accent-color: #ecb2a5;
+    --text-color: #220336;
+    --header-color: #593d36;
+    --subheader-color: #220336;
+}
+
+body {
+    background-image: url("C:/Users/User/Documents/Estudos/html-css/Projetos/inffantile2/Imagens/fitmedesignpath-flowers-9360325_1920.png");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10px;
+    border-radius: 0 20px 20px 20px;
+    max-width: 1400px;
+    margin: 0 auto; /* Centraliza a página horizontalmente */
+    min-width: 320px; /* Garante que a página seja legível em telas menores */
+}
+
+main {
+    background-color: #fafbfc;
+    padding: 30px;
+    border-radius: 0px 15px 15px 15px;
+    max-width: 1000px;
+    margin: 10px auto; /* Centraliza o conteúdo principal horizontalmente */
+    min-width: 320px; /* Garante que o conteúdo seja legível em telas menores */
+    height: auto;
+}
+
+image {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: linear-gradient(to left, #F2CEDF, #c2e7f0, #F2CEDF);*/
+    padding: 0px;
+    border-radius: 50px;
+    margin: 15px;
+}
+
+.navbar ul {
+    max-width: 100%;
+    display: flex;
+    list-style: none; /* Remove bolinhas */
+    padding: 0px;
+    gap: 20px; /* Espaço entre os itens */
+    margin: 0px;
+    justify-content: center; /* Centraliza o menu (pode usar flex-start ou space-between) */
+}
+
+/*strong {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, cursive;
+    font-size: 1.2em;
+    font-weight: normal;
+    color: rgb(255, 10, 2);
+    text-shadow: #25202091 1px 1px 2px;
+}*/
+
+.navbar a {
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(248, 247, 247);
+    text-shadow: #593d36 2px 2px 4px;
+    background-color: rgba(253, 153, 95, 0.363);
+    border-radius: 15px;
+    }
+
+.navbar a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgb(102, 24, 24);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+a {
+    font-family: Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(102, 24, 24);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgb(102, 24, 24);
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.lista-horizontal a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgb(102, 24, 24);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+strong:hover {
+    color: rgb(247, 244, 244);
+    text-shadow: 4px 4px 8px rgba(143, 138, 138, 0.185);
+    background-color: rgb(206, 23, 23);
+    box-shadow: #e7f84f 0px 0px 10px, #e4f317 0px 0px 20px, #FF9800 0px 0px 30px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+menu {
+    display: flex;
+    justify-content: center;
+    background-color:#887BB06d;
+    padding: 20px 0;
+    margin-top: 10;
+    margin: -20px;
+}
+
+h1 {
+    font-family: 'indie flower', cursive;
+    text-align: center;
+    color: #593d36;
+    font-size: 4em;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: none;
+    text-shadow: #5a4844 1px 1px 2px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'indie flower', cursive;
+    text-align: center;
+    padding: 20px;
+    color: #220336;
+    font-size: 2.8em;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    text-shadow: #c5a7a1 2px 2px 4px;
+}
+
+p {
+  font-family: "Indie Flower", cursive;
+  font-weight: 600;
+  font-style: normal;
+  text-align: justify;
+  color: #220336;
+  font-size: 1.8em;
+  margin: 0px 0;
+  text-indent: 30px;
+  padding: 15px;
+}
+
+.paragrafosemindentacao {
+    font-family: "Indie Flower", cursive;
+    font-weight: 600;
+    font-style: normal;
+    text-align: left;
+    color: #220336;
+    font-size: 1.3em;
+    margin: 0px 0;
+    padding: 0px;
+}
+ .container {
+    display: flex; /* Cria o layout de caixa flexível [4] */
+    justify-content: space-between; /* Distribui as imagens lateralmente [4] */
+    align-items: center; /* Centraliza verticalmente [4] */
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+    text-align: center;
+  }
+
+  .item {
+    flex: 1; /* Faz com que cada div ocupe espaço igual */
+    text-align: center; /* Centraliza a imagem dentro de sua área */
+  }
+
+
+  .lista-horizontal {
+    display: flex;
+    list-style: none; /* Remove as bolinhas */
+    padding:>0;
+    margin: 0;
+    gap: 20px; /* Cria um espaço entre os itens */
+    justify-content: center; /* Centraliza a lista horizontalmente */
+  }
+  
+  div.voltar {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2em;
+    text-shadow: #593d36 2px 2px 4px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  div.voltar a {
+    text-decoration:underline;
+    color: #220336;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: #593d36 2px 2px 4px;
+    padding: 10px 20px;
+    border-radius: 0px 20px 20px 20px;
+    background-color: #F2CEDF;
+    box-shadow: #4facf84d 0px 0px 10px, #1776f34b 0px 0px 20px, #0400ff46 0px 0px 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  div.video {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os vídeos */
+    flex-wrap: wrap; /* Permite que os vídeos se ajustem em telas menores */
+    margin-top: 20px;
+  }
+
+  div.produtosfemininos {
+    max-width: 100%;
+    display: inline-block;
+    justify-content: center;
+    height: auto;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+
+  div.produtosinfantis {
+    display: inline-block;
+    /*justify-content: center;*/
+    width: auto;
+    height: auto;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+
+    div#pi1 img {
+        max-width: 100%;
+        height: auto; /* Mantém a proporção das imagens */
+        border-radius: 15px;
+        margin-bottom: 10px;
+    
+        }
+
+    div#pi2 img {
+         max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
+         height: auto; /* Mantém a proporção das imagens */
+         margin-bottom: 20px;
+         border-radius: 10px;
+         
+        }
+    
+    div#pi3 img {
+         max-width: 100%;
+         height: auto; /* Mantém a proporção das imagens */
+         border-radius: 15px;
+         margin-bottom: 10px;
+         
+        }
+
+    div#pi1 img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+    }
+    
+    .imagedefault, .imagehover {
+    transition: opacity 0.5s ease-in-out;
+    }
+
+    div#pi2 img.imagehover {
+        display: none; /* Esconde a imagem alternativa por padrão */
+        opacity: 0;
+    }
+
+    div#pi2:hover img.imagedefault {
+        display: none; /* Esconde a imagem padrão ao passar o mouse */
+        opacity: 0;
+    }
+    div#pi2:hover img.imagehover {
+        display: inherit; /* Mostra a imagem alternativa ao passar o mouse */
+        opacity: 1;
+    }
+    
+    div#pi3 img.imagehover {
+        display: none; /* Esconde a imagem alternativa por padrão */
+        opacity: 0;
+    }
+
+    div#pi3:hover img.imagedefault {
+        display: none; /* Esconde a imagem padrão ao passar o mouse */
+        opacity: 0;
+    }
+    
+    div#pi3:hover img.imagehover {
+        display: inherit; /* Mostra a imagem alternativa ao passar o mouse */
+        opacity: 1;
+    }
+
+  
+    /*div.produtosfemininos img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: #4facf84d 0px 0px 10px, #1776f34b 0px 0px 20px, #0400ff46 0px 0px 30px;
+    transition: transform 0.3s ease;
+  }*/
+
+    div#pf1 img {
+        /*width: 400px; /* Largura fixa para as imagens dos produtos */
+        height: auto; /* Mantém a proporção das imagens */
+        border-radius: 15px;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    div#pf2 img {
+     /*width: 200px; /* Largura fixa para as imagens dos produtos */
+     height: auto; /* Mantém a proporção das imagens */
+     margin-bottom: 20px;
+     border-radius: 10px;
+     transition: transform 0.3s ease;
+    }
+
+    div#pf3 img {
+    /* width: 200px; /* Largura fixa para as imagens dos produtos */
+     height: auto; /* Mantém a proporção das imagens */
+     border-radius: 15px;
+     margin-bottom: 10px;
+     transition: transform 0.3s ease;
+    }
+
+
+    div#pf1 img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+    
+    }
+
+    div#pf2 img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+    
+    } 
+
+    div#pf3 img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+    
+    }
+
+    div.feminina {
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Centraliza a página horizontalmente */
+    margin-top: 10px;
+    min-width: 320px; /* Garante que a página seja legível em telas menores */  
+    }
+ 
+  footer {
+    min-width: 320px; /* Garante que o rodapé seja legível em telas menores */
+    background-color: #fafbfc;
+    width: 75%;
+    margin: auto;
+    text-align: justify;
+    padding: 10px;
+    color: #220336;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2em;
+    margin-top: 20px;
+    border-radius: 0px 20px 20px 20px;
+  } 
+
+  footer> p {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: #c5a7a1 2px 2px 4px;
+  }
+
