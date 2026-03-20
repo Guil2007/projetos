@@ -4,14 +4,14 @@
 
 @font-face {
     font-family: 'flanker'; /* Nome que você vai usar */
-    src: url('C:\Users\User\Documents\Estudos\html-css\Projetos\Inffantile\Fonts\FlankerGriffo-BoldItalic\Griffo\Flanker Griffo Italic Bold.otf') format('opentype'); /* Caminho da fonte */
+    src: url(/Fonts/FlankerGriffo-BoldItalic/Griffo/Flanker\ Griffo\ Italic\ Bold.otf) format('opentype'); /* Caminho da fonte */
     font-weight: bolder;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'gluten'; /* Nome que você vai usar */
-    src: url("C:\Users\User\Documents\Estudos\html-css\Projetos\Inffantile\Fonts\Gluten\static\Gluten-Bold.ttf") format('opentype'); /* Caminho da fonte */
+    src: url(/Fonts/Gluten/Gluten-VariableFont_slnt\,wght.ttf) format('opentype'); /* Caminho da fonte */
     font-weight: bold;
     font-style: normal;
 }
@@ -26,7 +26,7 @@
 }
 
 body {
-    background-image: url("/Imagens/fitmedesignpath-flowers-9360325_1920.png");
+    background-image: url(/Imagens/fitmedesignpath-flowers-9360325_1920.png);
     background-size: cover;
     background-attachment: fixed;
     padding: 10px;
