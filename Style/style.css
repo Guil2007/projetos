@@ -46,26 +46,7 @@ main {
     height: auto;
 }
 
-footer {
-    min-width: 320px; /* Garante que o rodapé seja legível em telas menores */
-    background-color: #fafbfc;
-    width: 79%;
-    margin: auto;
-    text-align: justify;
-    padding: 10px;
-    color: #220336;
-    font-family: 'Indie Flower', cursive;
-    font-size: 0.8em;
-    margin-top: 20px;
-    border-radius: 0px 10px 10px 10px;
-}
 
-    footer> p {
-        text-align: center;
-        font-size: 1.5em;
-        font-weight: bold;
-        text-shadow: #c5a7a1 2px 2px 4px;
-    }
 
 header {
     display: flex;
@@ -293,5 +274,41 @@ div.voltar {
     flex-wrap: wrap;        /* Se a tela for pequena (celular), elas quebram a linha */
 }
 
+section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 
+section.img {
+    background-image:url(../Fotos/infaloja.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.493);
 
+}
+
+section.img > p {
+    color: #131212;
+    min-height: 350px;
+}
+
+footer {
+    min-width: 320px; /* Garante que o rodapé seja legível em telas menores */
+    background-color: #fafbfc;
+    width: 79%;
+    margin: auto;
+    text-align: justify;
+    padding: 10px;
+    color: #220336;
+    font-family: 'Indie Flower', cursive;
+    font-size: 0.8em;
+    margin-top: 20px;
+    border-radius: 0px 10px 10px 10px;
+}
+
+    footer> p {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-shadow: #c5a7a1 2px 2px 4px;
+    }
