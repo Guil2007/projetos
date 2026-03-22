@@ -291,7 +291,7 @@ section.img {
 
 section.img > p {
     color: #131212;
-    min-height: 350px;
+    min-height: 250px;
 }
 
 footer {
