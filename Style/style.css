@@ -291,7 +291,7 @@ section.img {
 
 section.img > p {
     color: #131212;
-    min-height: 300px;
+    min-height: 100vh;
 }
 
 section.img > p {
