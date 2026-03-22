@@ -294,6 +294,15 @@ section.img > p {
     min-height: 250px;
 }
 
+section.img > p {
+    background-color: #5a484428;
+    color: #080d38;
+    text-shadow: #5a4844 1px 1px 1px;
+    text-align: left;
+    margin-left: 0px;
+    padding: 0;
+
+}
 footer {
     min-width: 320px; /* Garante que o rodapé seja legível em telas menores */
     background-color: #fafbfc;
