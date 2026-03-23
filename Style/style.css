@@ -127,7 +127,7 @@ p {
   font-family: "Indie Flower", cursive;
   font-weight: 600;
   font-style: normal;
-  text-align: justify;
+  text-align: center;
   color: #220336;
   font-size: 1.8em;
     @media (max-width:768px) {
