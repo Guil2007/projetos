@@ -280,8 +280,8 @@ section {
 }
 
 section.img {
-    background-image:url(../Fotos/infaloja.webp);
-    background-size:cover;
+    background-image:url(../Fotos/infaloja2.webp);
+    background-size: 72vmax;
     background-position: center top;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -302,7 +302,7 @@ section.img > p {
     text-align: left;
     margin-left: 0px;
     @media (min-width:768px) {
-        min-height: 1000px;
+        min-height: 700px;
         }
     @media (max-width:375px) {
         min-height: 400px;
