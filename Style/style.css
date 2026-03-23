@@ -282,10 +282,10 @@ section {
 section.img {
     background-image:url(../Fotos/infaloja2.webp);
     /*background-size: 72vmax;*/
-    @media (min-width:800px) {
-        background: size 100vmax;
+    @media (max-width:400px) {
+        background: size 50vmax;
         }
-    @media (min-width:320px) {
+    @media (max-width:1800px) {
         background-size: 72vmax;
         }
 
